@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.hot.cmt.comment</groupId>
+  <artifactId>sentiment</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+   
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<org.slf4j.version>1.7.5</org.slf4j.version>
+  	<org.junit.version>4.11</org.junit.version>
+  	<org.apache.commons.lang.version>2.6</org.apache.commons.lang.version>
+    <org.apache.commons.collections.version>3.2.1</org.apache.commons.collections.version>
+  </properties>
+  <dependencies>
+    <dependency>
+	<groupId>com.chenlb.mmseg4j</groupId>
+	<artifactId>mmseg4j-analysis</artifactId>
+	<version>1.9.1</version>
+	</dependency>
+<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${org.junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${org.slf4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${org.slf4j.version}</version>
+            </dependency>
+              <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${org.apache.commons.lang.version}</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${org.apache.commons.collections.version}</version>
+                <scope>compile</scope>
+            </dependency> 
+  </dependencies>
+</project>
